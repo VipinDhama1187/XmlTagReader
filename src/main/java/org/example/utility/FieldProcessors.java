@@ -8,10 +8,10 @@ import java.util.List;
 public class FieldProcessors {
 
     public static final FieldProcessor ORGNL_TX_ID_PROCESSOR = (reader, values, path) ->
-            values.put("originalTxId", reader.getElementText());
+            values.put("OrgnlTxId", reader.getElementText());
 
     public static final FieldProcessor ORGNL_E2E_ID_PROCESSOR = (reader, values, path) ->
-            values.put("originalEndToEndId", reader.getElementText());
+            values.put("OrgnlEndToEndId", reader.getElementText());
 
     public static final FieldProcessor TX_ID_PROCESSOR = (reader, values, path) ->
             values.put("TxId", reader.getElementText());
