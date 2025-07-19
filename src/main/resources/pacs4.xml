@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:pacs.004.001.09" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="urn:iso:std:iso:20022:tech:xsd:pacs.004.001.09 pacs.004.001.09.xsd">
+    <PmtRtr>
+        <GrpHdr>
+            <MsgId>6874d10fe3b61b301fc349b8</MsgId>
+            <CreDtTm>2026-06-02T09:42:39.851Z</CreDtTm>
+            <NbOfTxs>1</NbOfTxs>
+            <TtlRtrdIntrBkSttlmAmt Ccy="EUR">11.56</TtlRtrdIntrBkSttlmAmt>
+            <IntrBkSttlmDt>2025-07-14</IntrBkSttlmDt>
+            <SttlmInf>
+                <SttlmMtd>INDA</SttlmMtd>
+                <ClrSys>
+                    <Cd>INC</Cd>
+                </ClrSys>
+            </SttlmInf>
+            <InstgAgt>
+                <FinInstnId>
+                    <BICFI>BQEBFRPPXXX</BICFI>
+                </FinInstnId>
+            </InstgAgt>
+        </GrpHdr>
+        <OrgnlGrpInf>
+            <OrgnlMsgId>MsgIdSCRMz240319z103103</OrgnlMsgId>
+            <OrgnlMsgNmId>pacs.008.001.08</OrgnlMsgNmId>
+        </OrgnlGrpInf>
+        <TxInf>
+            <RtrId>6874d10f31431f564be6c726VIB</RtrId>
+            <OrgnlInstrId>InstrIdPKAz240319z103103</OrgnlInstrId>
+            <OrgnlEndToEndId>End2EndPKAz240319z103103</OrgnlEndToEndId>
+            <OrgnlTxId>IP_IN_BPCE_A_ClUG0jLHHopTcelh</OrgnlTxId>
+            <OrgnlIntrBkSttlmAmt Ccy="EUR">11.56</OrgnlIntrBkSttlmAmt>
+            <RtrdIntrBkSttlmAmt Ccy="EUR">11.56</RtrdIntrBkSttlmAmt>
+            <RtrRsnInf>
+                <Orgtr>
+                    <Nm>Graf</Nm>
+                </Orgtr>
+                <Rsn>
+                    <Cd>FOCR</Cd>
+                </Rsn>
+                <AddtlInf>ATR053/655b71f16bc2462fded8e7e3</AddtlInf>
+            </RtrRsnInf>
+            <OrgnlTxRef>
+                <IntrBkSttlmAmt Ccy="EUR">11.5600000000</IntrBkSttlmAmt>
+                <IntrBkSttlmDt>2025-07-14</IntrBkSttlmDt>
+                <SttlmInf>
+                    <SttlmMtd>INDA</SttlmMtd>
+                </SttlmInf>
+                <PmtTpInf>
+                    <SvcLvl>
+                        <Cd>SEPA</Cd>
+                    </SvcLvl>
+                    <LclInstrm>
+                        <Cd>INST</Cd>
+                    </LclInstrm>
+                </PmtTpInf>
+                <RmtInf>
+                    <Ustrd>Test</Ustrd>
+                </RmtInf>
+                <Dbtr>
+                    <Pty>
+                        <Nm>Johnson</Nm>
+                        <PstlAdr>
+                            <StrtNm>Genslerstraße</StrtNm>
+                            <TwnNm>Berlin</TwnNm>
+                            <Ctry>FR</Ctry>
+                        </PstlAdr>
+                    </Pty>
+                </Dbtr>
+                <DbtrAcct>
+                    <Id>
+                        <IBAN>FR7612548029980165673142019</IBAN>
+                    </Id>
+                </DbtrAcct>
+                <DbtrAgt>
+                    <FinInstnId>
+                        <BICFI>AXABFRPP</BICFI>
+                    </FinInstnId>
+                </DbtrAgt>
+                <CdtrAgt>
+                    <FinInstnId>
+                        <BICFI>BQEBFRPPXXX</BICFI>
+                    </FinInstnId>
+                </CdtrAgt>
+                <Cdtr>
+                    <Pty>
+                        <Nm>Graf</Nm>
+                        <PstlAdr>
+                            <Ctry>FR</Ctry>
+                            <AdrLine>62300 LENS</AdrLine>
+                        </PstlAdr>
+                    </Pty>
+                </Cdtr>
+                <CdtrAcct>
+                    <Id>
+                        <IBAN>FR7699999123450200223153662</IBAN>
+                    </Id>
+                </CdtrAcct>
+                <Purp>
+                    <Cd>IPAY</Cd>
+                </Purp>
+            </OrgnlTxRef>
+        </TxInf>
+    </PmtRtr>
+</Document>

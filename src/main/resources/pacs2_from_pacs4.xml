@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:pacs.002.001.10" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="urn:iso:std:iso:20022:tech:xsd:pacs.002.001.10 pacs.002.001.10.xsd">
+    <FIToFIPmtStsRpt>
+        <GrpHdr xmlns="urn:iso:std:iso:20022:tech:xsd:pacs.002.001.10">
+            <MsgId>6877f0d8c52d2c7da4e3a4f2</MsgId>
+            <CreDtTm>2025-07-16T18:35:04.609Z</CreDtTm>
+            <InstgAgt>
+                <FinInstnId>
+                    <BICFI>${initiatingAgentBIC}</BICFI>
+                </FinInstnId>
+            </InstgAgt>
+        </GrpHdr>
+        <OrgnlGrpInfAndSts xmlns="urn:iso:std:iso:20022:tech:xsd:pacs.002.001.10">
+            <OrgnlMsgId>MsgIdSCRMz240319z103103</OrgnlMsgId>
+            <OrgnlMsgNmId>pacs.008.001.08</OrgnlMsgNmId>
+            <GrpSts>ACCP</GrpSts>
+        </OrgnlGrpInfAndSts>
+        <TxInfAndSts xmlns="urn:iso:std:iso:20022:tech:xsd:pacs.002.001.10">
+            <StsId>6877f0d7e6af7a188eea312cnullVIB</StsId>
+            <OrgnlInstrId>InstrIdPKAz240319z103103</OrgnlInstrId>
+            <OrgnlEndToEndId>${OrgnlEndToEndId}</OrgnlEndToEndId>
+            <OrgnlTxId>${OrgnlTxId}</OrgnlTxId>
+            <AccptncDtTm>${acceptanceDateTime}</AccptncDtTm>
+            <OrgnlTxRef>
+                <IntrBkSttlmAmt Ccy="EUR">${amount}</IntrBkSttlmAmt>
+                <IntrBkSttlmDt>2025-07-16</IntrBkSttlmDt>
+                <SttlmInf>
+                    <SttlmMtd>INDA</SttlmMtd>
+                </SttlmInf>
+                <PmtTpInf>
+                    <SvcLvl>
+                        <Cd>SEPA</Cd>
+                    </SvcLvl>
+                    <LclInstrm>
+                        <Cd>INST</Cd>
+                    </LclInstrm>
+                </PmtTpInf>
+                <RmtInf>
+                    <Ustrd>Test</Ustrd>
+                </RmtInf>
+                <Dbtr>
+                    <Pty>
+                        <Nm>Johnson</Nm>
+                        <PstlAdr>
+                            <StrtNm>Genslerstraße</StrtNm>
+                            <TwnNm>Berlin</TwnNm>
+                            <Ctry>FR</Ctry>
+                        </PstlAdr>
+                    </Pty>
+                </Dbtr>
+                <DbtrAcct>
+                    <Id>
+                        <IBAN>${debtorIBAN}</IBAN>
+                    </Id>
+                </DbtrAcct>
+                <DbtrAgt>
+                    <FinInstnId>
+                        <BICFI>${debtorAgentBIC}</BICFI>
+                    </FinInstnId>
+                </DbtrAgt>
+                <CdtrAgt>
+                    <FinInstnId>
+                        <BICFI>${creditorAgentBIC}</BICFI>
+                    </FinInstnId>
+                </CdtrAgt>
+                <Cdtr>
+                    <Pty>
+                        <Nm>Graf</Nm>
+                        <PstlAdr>
+                            <Ctry>FR</Ctry>
+                            <AdrLine>62300 LENS</AdrLine>
+                        </PstlAdr>
+                    </Pty>
+                </Cdtr>
+                <CdtrAcct>
+                    <Id>
+                        <IBAN>${creditorIBAN}</IBAN>
+                    </Id>
+                </CdtrAcct>
+                <Purp>
+                    <Cd>IPAY</Cd>
+                </Purp>
+            </OrgnlTxRef>
+        </TxInfAndSts>
+    </FIToFIPmtStsRpt>
+</Document>
